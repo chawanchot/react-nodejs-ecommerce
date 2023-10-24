@@ -1,0 +1,211 @@
+.cart__overlay {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    opacity: 0;
+}
+
+.cart__overlay::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: .3s;
+    opacity: 0;
+    background-color: rgba(0,0,0,.4);
+}
+
+.cart__overlay.active::after {
+    visibility: visible;
+    transition: .3s;
+    opacity: .5;
+}
+
+.cart__overlay.active {
+    visibility: visible;
+    transition: .3s;
+    opacity: 1;
+}
+
+.cart__overlay__content {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    width: 380px;
+    height: 100%;
+    padding: 20px;
+    transition: .6s;
+    transform: translateX(100%);
+    background-color: #fff;
+}
+
+.cart__overlay.active .cart__overlay__content {
+    transition: .6s;
+    transform: translateX(0);
+}
+
+.cart__overlay__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    transition: .6s;
+    border: none;
+    background: none;
+}
+
+.cart__overlay__close-icon svg {
+    font-size: 25px;
+    color: #333;
+}
+
+.cart__overlay__content-container .cart__title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product {
+    position: relative;
+    display: flex;
+    margin-bottom: 25px;
+    padding: 0 8px 25px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .cart__close-icon {
+    line-height: 8px;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    padding: 0;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .cart__close-icon button {
+    color: #333;
+    border: none;
+    background: none;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .image {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .content {
+    width: calc(85% - 80px);
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .content h5 {
+    font-size: 15px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .content .cart__count {
+    font-size: 12px;
+    line-height: 22px;
+    color: #7e7e7e;
+}
+
+.cart__overlay__content-container .cart__warpper .sigle__cart__product .content .price {
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+}
+
+.cart__overlay__content-container .cart__warpper .cart__subtotal {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.cart__overlay__content-container .cart__warpper .cart__buttons {
+    margin-top: 30px;
+}
+
+.cart__overlay__content-container .cart__warpper .cart__buttons a {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff !important;
+    border: 1px solid #333;
+    border-radius: 0;
+    background-color: #333;
+}
+
+.rcs-custom-scroll .rcs-outer-container {
+    overflow: hidden;
+}
+
+.color__cart {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(44, 44, 44, 0.247);
+}
+
+.color__cart.yellow {
+    background-color: #FFBC63;
+}
+
+.color__cart.blue {
+    background-color: rgb(100, 158, 255);
+}
+
+.color__cart.white {
+    background-color: #fff;
+}
+
+.color__cart.red {
+    background-color: rgb(255, 113, 115);
+}
+
+.color__cart.black {
+    background-color: rgb(8, 8, 8);
+}
+
+@media screen and (max-width: 481px) {
+    .cart__overlay__content {
+        width: 350px;
+    }
+
+    .cart__overlay__content-container .cart__warpper .sigle__cart__product .content h5 {
+        font-size: 12px;
+    }
+
+    .cart__overlay__content-container .cart__warpper .sigle__cart__product .content .cart__count {
+        font-size: 11px;
+    }
+    
+    .cart__overlay__content-container .cart__warpper .sigle__cart__product .content .price {
+        font-size: 11px;
+    }
+}

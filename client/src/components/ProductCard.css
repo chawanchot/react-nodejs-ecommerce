@@ -1,0 +1,9 @@
+.fav__icon.active {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.product__card__image img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

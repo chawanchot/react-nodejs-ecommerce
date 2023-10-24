@@ -1,0 +1,9 @@
+.cate_container {
+    width: 20%;
+}
+
+@media screen and (max-width: 1023px) {
+    .cate_container {
+        width: 100%;
+    }
+}

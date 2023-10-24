@@ -1,0 +1,15 @@
+.shop__container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.shop__content {
+    width: 79%;
+}
+
+@media screen and (max-width: 1023px) {
+    .shop__content {
+        margin-top: 15px;
+        width: 100%;
+    }
+}

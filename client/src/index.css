@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mitr:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Mitr" !important;
+}
+
+@layer components {
+  .size__list {
+    @apply text-gray-900 relative cursor-pointer select-none py-2 pr-9 hover:bg-gray-400
+  }
+
+  .footer__img {
+    @apply w-14 mr-3 inline rounded-xl
+  }
+  
+  .sign__form {
+    @apply w-full h-14 text-xl bg-transparent border-b-2 text-center focus:outline-none focus:placeholder:text-transparent
+  }
+}
