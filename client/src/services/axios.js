@@ -1,7 +1,7 @@
 import axios from "axios";
 import refreshToken from "./refreshToken";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://react-nodejs-ecommerce-api.vercel.app";
 
 const axiosAPI = axios.create({
     baseURL: BASE_URL,
