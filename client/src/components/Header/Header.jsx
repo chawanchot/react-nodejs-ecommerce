@@ -82,7 +82,7 @@ function Header() {
                             </div>
                             <div className="col-span-2">
                                 <div className="text-base lg:text-xl text-zinc-500 text-center font-bold">
-                                    MURFDEV ECOMMERCE
+                                    ECOMMERCE
                                 </div>
                             </div>
                             <div>
