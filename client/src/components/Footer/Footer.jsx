@@ -35,11 +35,6 @@ function Footer() {
                                 className="footer__img"
                             />
                             <img
-                                src="https://www.ninjavan.co/cover.png"
-                                alt="ninjavan"
-                                className="footer__img"
-                            />
-                            <img
                                 src="https://standardexpress.online/wp-content/uploads/2020/03/best-express.png"
                                 alt="best express"
                                 className="footer__img"
